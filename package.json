@@ -1,0 +1,25 @@
+{
+  "name": "mofron-comp-winona",
+  "version": "0.0.1",
+  "description": "winona style button component for mofron",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpart/mofron-comp-winona.git"
+  },
+  "dependencies": {
+    "mofron-comp-button": ""
+  },
+  "keywords": [
+    "mofron"
+  ],
+  "author": "simparts",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simpart/mofron-comp-winona/issues"
+  },
+  "homepage": "https://github.com/simpart/mofron-comp-winona#readme"
+}
