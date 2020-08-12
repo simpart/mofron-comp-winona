@@ -9,6 +9,17 @@ component module template for developper
 npm install mofron mofron-comp-winona
 ```
 
+# Sample
+```html
+<setting>
+    <tag load="mofron-comp-winona">Button</tag>
+</setting>
+
+<Button size=(2rem,0.5rem) color=("#787878","#f0e6fa","#af6cf2")>
+    <text>Test</text>
+</Button>
+```
+
 # Parameter
 
 | Short<br>Form | Parameter Name | Type | Description |
