@@ -1,7 +1,9 @@
 # mofron-comp-winona
 [mofron](https://mofron.github.io/mofron/) is module based frontend framework.
 
-component module template for developper
+winona button component for mofron
+
+this source based on the codrops: https://github.com/codrops/ButtonStylesInspiration
 
 
 # Install

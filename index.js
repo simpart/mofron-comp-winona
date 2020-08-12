@@ -1,6 +1,7 @@
 /**
  * @file mofron-comp-winona/index.js
- * @brief component module template for developper
+ * @brief winona button component for mofron
+ *        this source based on the codrops: https://github.com/codrops/ButtonStylesInspiration
  * @license MIT
  */
 const Button = require("mofron-comp-button");
