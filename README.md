@@ -31,4 +31,7 @@ npm install mofron mofron-comp-winona
 | | | mixed | text component config |
 | | baseColor | mixed (color) | string: button background color name, #hex |
 | | | | array: [red, green, blue, (alpha)] |
+| | accentColor | mixed (color) | string: button background color name, #hex |
+| | | | array: [red, green, blue, (alpha)] |
+| | | | undefined: call as getter |
 

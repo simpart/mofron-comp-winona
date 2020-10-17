@@ -48,7 +48,7 @@ module.exports = class extends Button {
 		    try {
 		        comutl.addstyle(
 			    "winona",
-			    ".winona::after{font-size:" + fs2[0]["font-size"] + ";}"
+			    ".winona::after{font-size:" + fs2[0] + ";}"
 			);
 		    } catch (e) {
                         console.error(e.stack);
@@ -105,6 +105,34 @@ module.exports = class extends Button {
                 );
                 comutl.addstyle(this.id(), style);
             }
+	} catch (e) {
+            console.error(e.stack);
+            throw e;
+	}
+    }
+    
+    /**
+     * button border,text color
+     * 
+     * @param (mixed (color)) string: button background color name, #hex
+     *                        array: [red, green, blue, (alpha)]
+     *                        undefined: call as getter
+     * @return (mixed) button accent color
+     *                 null: not set yet
+     * @type parameter
+     */
+    accentColor (prm,opt) {
+        try {
+	    let ret = super.accentColor(prm,opt);
+            
+            if (undefined !== prm) {
+                let style = comutl.obj2style(
+                    "#" + this.childDom().id() + ":hover",
+                    { "color" : comutl.getcolor(prm).toString() }
+                );
+                comutl.addstyle(this.id(), style);
+            }
+	    return ret;
 	} catch (e) {
             console.error(e.stack);
             throw e;
